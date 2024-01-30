@@ -24,8 +24,11 @@ import {
   Calendar,
 } from "./pages";
 
+import { useStateContext } from "./contexts/ContextProvider";
+
 export const App = () => {
-  const activeMenu = true;
+  const { activeMenu } = useStateContext();
+
   return (
     <div>
       <BrowserRouter>
